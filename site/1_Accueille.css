@@ -1,0 +1,128 @@
+/*Reglage page*/
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Fond*/
+body {
+    background-image: url('Image/Autre/Fond_Texture_Taule.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*Box titre*/
+.TitreBox {
+box-sizing: content-box;
+width: 30%;
+padding: 2px;
+}
+
+
+/*Titre BC GRAPHICS*/
+.Titre {
+    -webkit-text-stroke: 2px black;
+    text-shadow: 10px 5px 3px black;
+    font-size: 30pt;
+    font-family: arial;
+    text-decoration: none;
+}
+
+
+/*Reglage bouton menu*/
+.Bouton {
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+    font-family: arial;
+    text-decoration: none;
+    background: linear-gradient(to bottom right, #44bd32, #ffd32a);
+    border-radius: 15px;
+    border: 5px solid black;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    width: 10px;
+}
+
+
+/*Animation bouton menu*/
+a:hover,
+a:focus {
+    padding: 15px;
+    width: 15px;
+}
+
+
+/*Reglage logo BC GRAPHICS*/
+.Logo {
+    max-width: 20%;
+    max-height: 20%;
+    position: absolute;
+    top: 30px;
+    left: 1670px;
+    filter: drop-shadow(10px 5px 3px black);
+    cursor: pointer;
+}
+
+
+/*Animation logo BC GRAPHICS*/
+.Logo:hover,
+.Logo:focus {
+transform: rotate(360deg);
+transition: 0.5s ease-in-out;
+}
+
+
+/*Box slider*/
+.slider {
+    height: 80vh;
+    position: relative;
+}
+
+
+/*Reglage image slider*/
+.slider img {
+    object-fit: cover;
+    max-height: 95%;
+    max-width: 95%;
+    position: absolute;
+    top: 20px;
+    left: 465px;
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 15px;
+    border: 5px solid #ffd32a;
+}
+
+
+/*Slider image active*/
+.slider img.active {
+    opacity: 1;
+}
+
+
+/*Regalage bouton slider suivant precedent*/
+.suivant, .precedent {
+    color: #44bd32;
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/*Positionement bouton slider suivant precedent*/
+.suivant {
+    right: 1rem;
+}
+
+.precedent {
+    left: 1rem;
+}
